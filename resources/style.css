@@ -10,18 +10,17 @@
 }
 
 .Menu-Item-Label {
-    display: inline-block;
+    position: relative;
 }
 
 .Menu-Item-Label::after {
-    content: ""; /* Add this line */
-    position: absolute; /* Add this line */
-    top: 50%; /* Adjust this value as needed */
-    right: 0; /* Adjust this value as needed */
+    content: "";
+    position: absolute;
+    margin: 5px;
     background-color: white;
     width: 16px;
-    height: 20px;
-    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    height: 16px;
+    clip-path: polygon(0 0, 100% 0%, 50% 100%);
 }
 
 .Menu-Item {
