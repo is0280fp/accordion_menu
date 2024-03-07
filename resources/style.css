@@ -1,0 +1,33 @@
+.Menu {
+    list-style-type: none;
+    background: #0194ff;
+    color: white;
+    padding: 0;
+}
+
+.Menu li + li {
+    border-top: solid 1px white;
+}
+
+.Menu-Item-Label {
+    display: inline-block;
+}
+
+.Menu-Item-Label::after {
+    content: ""; /* Add this line */
+    position: absolute; /* Add this line */
+    top: 50%; /* Adjust this value as needed */
+    right: 0; /* Adjust this value as needed */
+    background-color: white;
+    width: 16px;
+    height: 20px;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.Menu-Item {
+    padding: 10px;
+}
+
+.Menu-Item__Inner {
+    list-style-type: none;
+}
