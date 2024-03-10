@@ -9,11 +9,12 @@ labels.forEach((label)=> {
             const targetHeight = lastContent.getBoundingClientRect().bottom - firstContent.getBoundingClientRect().top
             console.log(targetHeight)
             itemInner.style.height = `${targetHeight}px`
-            // label.dataset.isOpen = true
+            label.dataset.isOpen = true
         }
 
         if (label.dataset.isOpen === "true") {
-            itemInner.style.height = "auto"
+            // itemInner.style.height = "auto"
+            // itemInner.style.height = 0
             label.dataset.isOpen = false
         }
        
